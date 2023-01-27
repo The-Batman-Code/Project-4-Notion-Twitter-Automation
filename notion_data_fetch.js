@@ -3,7 +3,7 @@ const fs = require('fs');
 const { finished } = require("stream");
 
 const notion = new Client({
-    auth : "secret_HOehkTMYg3PTotMKNQe8UztHLHfgOtvnJ4ij2ZXgdeW"
+    auth : "your internal integration token" 
 })
 
 ;(async() => {
@@ -23,7 +23,7 @@ const notion = new Client({
     let tweets=[];
 
     const res = await notion.databases.query({
-        database_id: "0bf52ee93bbf4bdfb0a1ab0071c4ffe9",
+        database_id: "your database ID",
             "filter": {
                 "property": "Dates",
                 "date": {
